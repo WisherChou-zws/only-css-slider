@@ -9,9 +9,9 @@
   <style>
     * { margin: 0; padding: 0;}
 
-    div { width: 100%; overflow: hidden;}/*vw:视口宽度；1vw 等于视口宽度的1%*/
+    div { width: 100vw; overflow: hidden;}/*vw:视口宽度；1vw 等于视口宽度的1%*/
     ul{ float: left; display: flex;}
-    ul li{ width: 100%; float: left; list-style: none; animation: slide 10s ease 0s infinite normal both;}
+    ul li{ width: 100vw; float: left; list-style: none; animation: slide 10s ease 0s infinite normal both;}
     ul li img{ width: 100%; border: 0; vertical-align:middle;}/*vertical-align:middle;可以避免包裹图片的父级多出几像素的问题*/
 
     /*停顿(开始)>左移>停顿>左移>归零(结束)  此为三张图片  多一张图片加一个停顿+左移*/
