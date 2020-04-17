@@ -10,10 +10,10 @@
     /*本例未进行过兼容测试*/
     * { margin: 0; padding: 0;}
 
-    div { width: 100%; overflow: hidden;}/*vw:视口宽度；1vw 等于视口宽度的1%*/
-    ul{ float: left; display: flex;}
-    ul li{ width: 100vw; float: left; list-style: none; animation: slide 10s ease 0s infinite normal both;}
-    ul li img{ width: 100%; border: 0; vertical-align:middle;}/*vertical-align:middle;可以避免包裹图片的父级多出几像素的问题*/
+    .banner { width: 100%; overflow: hidden;} /*vw:视口宽度；1vw 等于视口宽度的1%*/
+    .list { float: left; display: flex;}
+    .list li { width: 100vw; float: left; list-style: none; animation: slide 10s ease 0s infinite normal both;}
+    .list li img { width: 100%; max-height: 100vh; border: 0; vertical-align: middle;} /*vertical-align:middle;可以避免包裹图片的父级多出几像素的问题*/
 
     /*停顿(开始)>左移>停顿>左移>归零(结束)  此为三张图片  多一张图片加一个停顿+左移*/
     @keyframes slide {
@@ -29,8 +29,8 @@
 </head>
 
 <body>
-  <div>
-    <ul>
+  <div class="banner">
+    <ul class="list">
       <li><img src="./images/img1.jpg"></li>
       <li><img src="./images/img2.jpg"></li>
       <li><img src="./images/img3.jpg"></li>
